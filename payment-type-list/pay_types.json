@@ -1,0 +1,5049 @@
+{
+    "status": {
+        "error_code": "",
+        "status": "SUCCESS",
+        "message": "",
+        "response_code": "",
+        "operation_id": "7a071536-9252-4640-9b40-b498a79e965a"
+    },
+    "data": [
+        {
+            "type": "in_bharatpay_cash",
+            "name": "Pay at store",
+            "category": "cash",
+            "image": "https://iconslib.rapyd.net/checkout/in_bharatpay_cash.png",
+            "country": "IN",
+            "payment_flow_type": "cash",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": true,
+            "payment_options": [],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": false,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_visa_credit_card",
+            "name": "VISA Credit Card",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_visa_credit_card.png",
+            "country": "in",
+            "payment_flow_type": "card",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment is successful",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment fails",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_dhanlaxmi_bank",
+            "name": "Dhanlaxmi Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_dhanlaxmi_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_maestro_debit_card",
+            "name": "Maestro Debit Card",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_maestro_debit_card.png",
+            "country": "in",
+            "payment_flow_type": "card",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment is successful",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment fails",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_airtelmoney_ewallet",
+            "name": "Airtel Money eWallet",
+            "category": "ewallet",
+            "image": "https://iconslib.rapyd.net/checkout/in_airtelmoney_ewallet.png",
+            "country": "IN",
+            "payment_flow_type": "ewallet",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name ,email and phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_icici_bank",
+            "name": "ICICI Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_icici_bank.png",
+            "country": "IN",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "EUR",
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "EUR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_amex_credit_card",
+            "name": "Amex Credit Card",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_amex_credit_card.png",
+            "country": "in",
+            "payment_flow_type": "card",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment is successful",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment fails",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_indusind_bank",
+            "name": "IndusInd Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_indusind_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_vijaya_bank",
+            "name": "Vijaya Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_vijaya_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_rupay_debit_card",
+            "name": "Rupay Debit Card",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_rupay_debit_card.png",
+            "country": "in",
+            "payment_flow_type": "card",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment is successful",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment fails",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_karurvysya_bank",
+            "name": "Karur Vysya Bank Corporate",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_karurvysya_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_credit_visa_card",
+            "name": "Visa",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_credit_visa_card.png",
+            "country": "in",
+            "payment_flow_type": "",
+            "currencies": [
+                "AED",
+                "AUD",
+                "BDT",
+                "BND",
+                "BRL",
+                "CAD",
+                "CHF",
+                "CNY",
+                "COP",
+                "CZK",
+                "DKK",
+                "EGP",
+                "EUR",
+                "FJD",
+                "GBP",
+                "HKD",
+                "HUF",
+                "IDR",
+                "ILS",
+                "INR",
+                "IQD",
+                "IRR",
+                "ISK",
+                "JPY",
+                "KRW",
+                "KWD",
+                "LAK",
+                "LKR",
+                "MMK",
+                "MOP",
+                "MXN",
+                "MYR",
+                "NGN",
+                "NOK",
+                "NPR",
+                "NZD",
+                "PHP",
+                "PKR",
+                "PLN",
+                "QAR",
+                "RUB",
+                "SAR",
+                "SCR",
+                "SEK",
+                "SGD",
+                "THB",
+                "TRY",
+                "TWD",
+                "USD",
+                "VND",
+                "ZAR"
+            ],
+            "status": 1,
+            "is_cancelable": true,
+            "payment_options": [
+                {
+                    "name": "capture",
+                    "type": "boolean",
+                    "regex": "",
+                    "description": "Determines when the payment is processed for capture.",
+                    "is_required": false,
+                    "is_updatable": false
+                },
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the complete_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the error_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "AED",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "AUD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BDT",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BRL",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CAD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CHF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CNY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "COP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CZK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "DKK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EGP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EUR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "FJD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "GBP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HKD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HUF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IDR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ILS",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IQD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IRR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ISK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "JPY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KRW",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LAK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MMK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MOP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MXN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MYR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NGN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NOK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NPR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NZD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PHP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PLN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "QAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "RUB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SCR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SEK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SGD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "THB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TRY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "USD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "VND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ZAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_unitedbankindia_bank",
+            "name": "United Bank of India",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_unitedbankindia_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_debit_visa_card",
+            "name": "Visa Debit",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_debit_visa_card.png",
+            "country": "in",
+            "payment_flow_type": "",
+            "currencies": [
+                "AED",
+                "AUD",
+                "BDT",
+                "BND",
+                "BRL",
+                "CAD",
+                "CHF",
+                "CNY",
+                "COP",
+                "CZK",
+                "DKK",
+                "EGP",
+                "EUR",
+                "FJD",
+                "GBP",
+                "HKD",
+                "HUF",
+                "IDR",
+                "ILS",
+                "INR",
+                "IQD",
+                "IRR",
+                "ISK",
+                "JPY",
+                "KRW",
+                "KWD",
+                "LAK",
+                "LKR",
+                "MMK",
+                "MOP",
+                "MXN",
+                "MYR",
+                "NGN",
+                "NOK",
+                "NPR",
+                "NZD",
+                "PHP",
+                "PKR",
+                "PLN",
+                "QAR",
+                "RUB",
+                "SAR",
+                "SCR",
+                "SEK",
+                "SGD",
+                "THB",
+                "TRY",
+                "TWD",
+                "USD",
+                "VND",
+                "ZAR"
+            ],
+            "status": 1,
+            "is_cancelable": true,
+            "payment_options": [
+                {
+                    "name": "capture",
+                    "type": "boolean",
+                    "regex": "",
+                    "description": "Determines when the payment is processed for capture.",
+                    "is_required": false,
+                    "is_updatable": false
+                },
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the complete_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the error_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "AED",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "AUD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BDT",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BRL",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CAD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CHF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CNY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "COP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CZK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "DKK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EGP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EUR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "FJD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "GBP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HKD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HUF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IDR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ILS",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IQD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IRR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ISK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "JPY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KRW",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LAK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MMK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MOP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MXN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MYR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NGN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NOK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NPR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NZD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PHP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PLN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "QAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "RUB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SCR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SEK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SGD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "THB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TRY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "USD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "VND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ZAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_andhra_bank",
+            "name": "Andhra Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_andhra_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_nainital_bank",
+            "name": "Nainital Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_nainital_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_indian_bank",
+            "name": "Indian Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_indian_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name ,email and phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_dena_bank",
+            "name": "Dena Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_dena_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_idbi_bank",
+            "name": "IDBI Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_idbi_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_payzapp_ewallet",
+            "name": "PayZapp eWallet",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_payzapp_ewallet.png",
+            "country": "IN",
+            "payment_flow_type": "eWallet",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name ,email and phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_amex_card",
+            "name": "American Express",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_amex_card.png",
+            "country": "in",
+            "payment_flow_type": "",
+            "currencies": [
+                "AED",
+                "AUD",
+                "BDT",
+                "BND",
+                "BRL",
+                "CAD",
+                "CHF",
+                "CNY",
+                "COP",
+                "CZK",
+                "DKK",
+                "EGP",
+                "EUR",
+                "FJD",
+                "GBP",
+                "HKD",
+                "HUF",
+                "IDR",
+                "ILS",
+                "INR",
+                "IQD",
+                "IRR",
+                "ISK",
+                "JPY",
+                "KRW",
+                "KWD",
+                "LAK",
+                "LKR",
+                "MMK",
+                "MOP",
+                "MXN",
+                "MYR",
+                "NGN",
+                "NOK",
+                "NPR",
+                "NZD",
+                "PHP",
+                "PKR",
+                "PLN",
+                "QAR",
+                "RUB",
+                "SAR",
+                "SCR",
+                "SEK",
+                "SGD",
+                "THB",
+                "TRY",
+                "TWD",
+                "USD",
+                "VND",
+                "ZAR"
+            ],
+            "status": 1,
+            "is_cancelable": true,
+            "payment_options": [
+                {
+                    "name": "capture",
+                    "type": "boolean",
+                    "regex": "",
+                    "description": "Determines when the payment is processed for capture.",
+                    "is_required": false,
+                    "is_updatable": false
+                },
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the complete_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the error_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "AED",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "AUD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BDT",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BRL",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CAD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CHF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CNY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "COP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CZK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "DKK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EGP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EUR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "FJD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "GBP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HKD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HUF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IDR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ILS",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IQD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IRR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ISK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "JPY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KRW",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LAK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MMK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MOP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MXN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MYR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NGN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NOK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NPR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NZD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PHP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PLN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "QAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "RUB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SCR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SEK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SGD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "THB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TRY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "USD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "VND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ZAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_credit_mastercard_card",
+            "name": "Mastercard",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_credit_mastercard_card.png",
+            "country": "in",
+            "payment_flow_type": "",
+            "currencies": [
+                "AED",
+                "AUD",
+                "BDT",
+                "BND",
+                "BRL",
+                "CAD",
+                "CHF",
+                "CNY",
+                "COP",
+                "CZK",
+                "DKK",
+                "EGP",
+                "EUR",
+                "FJD",
+                "GBP",
+                "HKD",
+                "HUF",
+                "IDR",
+                "ILS",
+                "INR",
+                "IQD",
+                "IRR",
+                "ISK",
+                "JPY",
+                "KRW",
+                "KWD",
+                "LAK",
+                "LKR",
+                "MMK",
+                "MOP",
+                "MXN",
+                "MYR",
+                "NGN",
+                "NOK",
+                "NPR",
+                "NZD",
+                "PHP",
+                "PKR",
+                "PLN",
+                "QAR",
+                "RUB",
+                "SAR",
+                "SCR",
+                "SEK",
+                "SGD",
+                "THB",
+                "TRY",
+                "TWD",
+                "USD",
+                "VND",
+                "ZAR"
+            ],
+            "status": 1,
+            "is_cancelable": true,
+            "payment_options": [
+                {
+                    "name": "capture",
+                    "type": "boolean",
+                    "regex": "",
+                    "description": "Determines when the payment is processed for capture.",
+                    "is_required": false,
+                    "is_updatable": false
+                },
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the complete_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the error_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "AED",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "AUD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BDT",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BRL",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CAD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CHF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CNY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "COP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CZK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "DKK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EGP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EUR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "FJD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "GBP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HKD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HUF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IDR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ILS",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IQD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IRR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ISK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "JPY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KRW",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LAK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MMK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MOP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MXN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MYR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NGN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NOK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NPR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NZD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PHP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PLN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "QAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "RUB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SCR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SEK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SGD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "THB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TRY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "USD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "VND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ZAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_diners_credit_card",
+            "name": "Diners Credit Card",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_diners_credit_card.png",
+            "country": "in",
+            "payment_flow_type": "card",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment is successful",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment fails",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_orientalbank_bank",
+            "name": "Oriental Bank of Commerce",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_orientalbank_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_jnk_bank",
+            "name": "Jammu and Kashmir Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_jnk_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_lakshmivilasretail_bank",
+            "name": "Lakshmi Vilas Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_lakshmivilasretail_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_janatasahakari_bank",
+            "name": "Janata Sahakari Bank Pune",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_janatasahakari_bank.png",
+            "country": "IN",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR",
+                "MXN"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MXN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_rupay_credit_card",
+            "name": "Rupay Credit Card",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_rupay_credit_card.png",
+            "country": "in",
+            "payment_flow_type": "card",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment is successful",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment fails",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_southindian_bank",
+            "name": "South Indian Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_southindian_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_devcredit_bank",
+            "name": "Development Credit Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_devcredit_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_visa_debit_card",
+            "name": "VISA Debit Card",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_visa_debit_card.png",
+            "country": "in",
+            "payment_flow_type": "card",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment is successful",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment fails",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_pnbretail_bank",
+            "name": "Punjab National Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_pnbretail_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_federal_bank",
+            "name": "The Federal Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_federal_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_phonepe_ewallet",
+            "name": "PhonePe eWallet",
+            "category": "ewallet",
+            "image": "https://iconslib.rapyd.net/checkout/in_phonepe_ewallet.png",
+            "country": "in",
+            "payment_flow_type": "ewallet",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name ,email and phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_canara_bank",
+            "name": "Canara Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_canara_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_unionbankindia_bank",
+            "name": "Union Bank of India",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_unionbankindia_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_cbi_bank",
+            "name": "Central Bank of India",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_cbi_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_mastercard_debit_card",
+            "name": "Mastercard Debit Card",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_mastercard_debit_card.png",
+            "country": "in",
+            "payment_flow_type": "card",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment is successful",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment fails",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_saraswat_bank",
+            "name": "Saraswat Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_saraswat_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_karur_vysya_bank",
+            "name": "Karur Vysya Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_karur_vysya_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_mastercard_credit_card",
+            "name": "Mastercard Credit Card",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_mastercard_credit_card.png",
+            "country": "in",
+            "payment_flow_type": "card",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment is successful",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}.([-a-zA-Z0-9()@:%_+.~#?&amp;//=]*)",
+                    "description": "URL the payer will be redirected to, after making the payment, and the payment fails",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_indianoverseas_bank",
+            "name": "Indian Overseas Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_indianoverseas_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_karnataka_bank",
+            "name": "Karnataka Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_karnataka_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_tamilnad_mercantile_bank",
+            "name": "Tamilnad Mercantile Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_tamilnad_mercantile_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_debit_rupay_card",
+            "name": "RuPay Debit",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_debit_rupay_card.png",
+            "country": "in",
+            "payment_flow_type": "",
+            "currencies": [
+                "AED",
+                "AUD",
+                "BDT",
+                "BND",
+                "BRL",
+                "CAD",
+                "CHF",
+                "CNY",
+                "COP",
+                "CZK",
+                "DKK",
+                "EGP",
+                "EUR",
+                "FJD",
+                "GBP",
+                "HKD",
+                "HUF",
+                "IDR",
+                "ILS",
+                "INR",
+                "IQD",
+                "IRR",
+                "ISK",
+                "JPY",
+                "KRW",
+                "KWD",
+                "LAK",
+                "LKR",
+                "MMK",
+                "MOP",
+                "MXN",
+                "MYR",
+                "NGN",
+                "NOK",
+                "NPR",
+                "NZD",
+                "PHP",
+                "PKR",
+                "PLN",
+                "QAR",
+                "RUB",
+                "SAR",
+                "SCR",
+                "SEK",
+                "SGD",
+                "THB",
+                "TRY",
+                "TWD",
+                "USD",
+                "VND",
+                "ZAR"
+            ],
+            "status": 1,
+            "is_cancelable": true,
+            "payment_options": [
+                {
+                    "name": "capture",
+                    "type": "boolean",
+                    "regex": "",
+                    "description": "Determines when the payment is processed for capture.",
+                    "is_required": false,
+                    "is_updatable": false
+                },
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the complete_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the error_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "AED",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "AUD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BDT",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BRL",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CAD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CHF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CNY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "COP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CZK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "DKK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EGP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EUR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "FJD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "GBP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HKD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HUF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IDR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ILS",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IQD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IRR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ISK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "JPY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KRW",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LAK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MMK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MOP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MXN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MYR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NGN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NOK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NPR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NZD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PHP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PLN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "QAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "RUB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SCR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SEK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SGD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "THB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TRY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "USD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "VND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ZAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_googlepay_upi_bank",
+            "name": "Google Pay via UPI",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_googlepay_upi_bank.png",
+            "country": "IN",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name ,email and phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_punjabsind_bank",
+            "name": "Punjab and Sind Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_punjabsind_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_catholicsyrian_bank",
+            "name": "Catholic Syrian Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_catholicsyrian_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_hdfc_bank",
+            "name": "HDFC Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_hdfc_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_pnbcorp_bank",
+            "name": "Punjab National Bank Corporate",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_pnbcorp_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_punjmahacoop_bank",
+            "name": "Punjab and Maharashtra Co-operative Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_punjmahacoop_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_internationalcards_card",
+            "name": "International Card from Non-IN region",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_internationalcards_card.png",
+            "country": "in",
+            "payment_flow_type": "card",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_uco_bank",
+            "name": "UCO Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_uco_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_corporation_bank",
+            "name": "Corporation Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_corporation_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_unionbnkcorp_bank",
+            "name": "Union Bank of India - Corporate",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_unionbnkcorp_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_olamoney_ewallet",
+            "name": "OlaMoney eWallet",
+            "category": "ewallet",
+            "image": "https://iconslib.rapyd.net/checkout/in_olamoney_ewallet.png",
+            "country": "IN",
+            "payment_flow_type": "ewallet",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name ,email and phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_idfc_bank",
+            "name": "IDFC Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_idfc_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_bankofmaha_bank",
+            "name": "Bank of Maharashtra",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_bankofmaha_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_syndicate_bank",
+            "name": "Syndicate Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_syndicate_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_cosmos_bank",
+            "name": "Cosmos Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_cosmos_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_kotakmahindra_bank",
+            "name": "Kotak Mahindra Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_kotakmahindra_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_upi_bank",
+            "name": "UPI",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_upi_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name ,email and phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_credit_rupay_card",
+            "name": "RuPay",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_credit_rupay_card.png",
+            "country": "in",
+            "payment_flow_type": "",
+            "currencies": [
+                "AED",
+                "AUD",
+                "BDT",
+                "BND",
+                "BRL",
+                "CAD",
+                "CHF",
+                "CNY",
+                "COP",
+                "CZK",
+                "DKK",
+                "EGP",
+                "EUR",
+                "FJD",
+                "GBP",
+                "HKD",
+                "HUF",
+                "IDR",
+                "ILS",
+                "INR",
+                "IQD",
+                "IRR",
+                "ISK",
+                "JPY",
+                "KRW",
+                "KWD",
+                "LAK",
+                "LKR",
+                "MMK",
+                "MOP",
+                "MXN",
+                "MYR",
+                "NGN",
+                "NOK",
+                "NPR",
+                "NZD",
+                "PHP",
+                "PKR",
+                "PLN",
+                "QAR",
+                "RUB",
+                "SAR",
+                "SCR",
+                "SEK",
+                "SGD",
+                "THB",
+                "TRY",
+                "TWD",
+                "USD",
+                "VND",
+                "ZAR"
+            ],
+            "status": 1,
+            "is_cancelable": true,
+            "payment_options": [
+                {
+                    "name": "capture",
+                    "type": "boolean",
+                    "regex": "",
+                    "description": "Determines when the payment is processed for capture.",
+                    "is_required": false,
+                    "is_updatable": false
+                },
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the complete_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the error_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "AED",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "AUD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BDT",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BRL",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CAD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CHF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CNY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "COP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CZK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "DKK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EGP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EUR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "FJD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "GBP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HKD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HUF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IDR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ILS",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IQD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IRR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ISK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "JPY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KRW",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LAK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MMK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MOP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MXN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MYR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NGN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NOK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NPR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NZD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PHP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PLN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "QAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "RUB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SCR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SEK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SGD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "THB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TRY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "USD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "VND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ZAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_debit_mastercard_card",
+            "name": "Mastercard Debit",
+            "category": "card",
+            "image": "https://iconslib.rapyd.net/checkout/in_debit_mastercard_card.png",
+            "country": "in",
+            "payment_flow_type": "",
+            "currencies": [
+                "AED",
+                "AUD",
+                "BDT",
+                "BND",
+                "BRL",
+                "CAD",
+                "CHF",
+                "CNY",
+                "COP",
+                "CZK",
+                "DKK",
+                "EGP",
+                "EUR",
+                "FJD",
+                "GBP",
+                "HKD",
+                "HUF",
+                "IDR",
+                "ILS",
+                "INR",
+                "IQD",
+                "IRR",
+                "ISK",
+                "JPY",
+                "KRW",
+                "KWD",
+                "LAK",
+                "LKR",
+                "MMK",
+                "MOP",
+                "MXN",
+                "MYR",
+                "NGN",
+                "NOK",
+                "NPR",
+                "NZD",
+                "PHP",
+                "PKR",
+                "PLN",
+                "QAR",
+                "RUB",
+                "SAR",
+                "SCR",
+                "SEK",
+                "SGD",
+                "THB",
+                "TRY",
+                "TWD",
+                "USD",
+                "VND",
+                "ZAR"
+            ],
+            "status": 1,
+            "is_cancelable": true,
+            "payment_options": [
+                {
+                    "name": "capture",
+                    "type": "boolean",
+                    "regex": "",
+                    "description": "Determines when the payment is processed for capture.",
+                    "is_required": false,
+                    "is_updatable": false
+                },
+                {
+                    "name": "complete_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the complete_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                },
+                {
+                    "name": "error_payment_url",
+                    "type": "string",
+                    "regex": "",
+                    "description": "the error_payment_url field must be filled in.",
+                    "is_required": true,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 604800,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "AED",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "AUD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BDT",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "BRL",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CAD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CHF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CNY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "COP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "CZK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "DKK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EGP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "EUR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "FJD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "GBP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HKD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "HUF",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IDR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ILS",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IQD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "IRR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ISK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "JPY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KRW",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "KWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LAK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "LKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MMK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MOP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MXN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "MYR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NGN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NOK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NPR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "NZD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PHP",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PKR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "PLN",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "QAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "RUB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SCR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SEK",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "SGD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "THB",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TRY",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "TWD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "USD",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "VND",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                },
+                {
+                    "currency": "ZAR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_bankofindia_bank",
+            "name": "Bank of India",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_bankofindia_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_deutsche_bank",
+            "name": "Deutsche Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_deutsche_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_jiomoney_ewallet",
+            "name": "JioMoney eWallet",
+            "category": "ewallet_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_jiomoney_ewallet.png",
+            "country": "IN",
+            "payment_flow_type": "ewallet",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name ,email and phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_shamraovithal_bank",
+            "name": "Shamrao Vithal Co-operative Bank",
+            "category": "bank_redirect",
+            "image": "https://iconslib.rapyd.net/checkout/in_shamraovithal_bank.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name and email ad phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        },
+        {
+            "type": "in_paytm_ewallet",
+            "name": "Paytm eWallet",
+            "category": "ewallet",
+            "image": "https://iconslib.rapyd.net/checkout/in_paytm_ewallet.png",
+            "country": "in",
+            "payment_flow_type": "redirect_url",
+            "currencies": [
+                "INR"
+            ],
+            "status": 1,
+            "is_cancelable": false,
+            "payment_options": [
+                {
+                    "name": "customer",
+                    "type": "customer",
+                    "regex": "",
+                    "description": "make sure a customer was created with first_name, last_name ,email and phone_number",
+                    "is_required": false,
+                    "is_updatable": false
+                }
+            ],
+            "is_expirable": false,
+            "is_online": false,
+            "is_refundable": true,
+            "minimum_expiration_seconds": 0,
+            "maximum_expiration_seconds": 1209600,
+            "virtual_payment_method_type": "",
+            "is_virtual": false,
+            "multiple_overage_allowed": false,
+            "amount_range_per_currency": [
+                {
+                    "currency": "INR",
+                    "maximum_amount": null,
+                    "minimum_amount": null
+                }
+            ],
+            "is_tokenizable": false,
+            "supported_digital_wallet_providers": []
+        }
+    ]
+}
