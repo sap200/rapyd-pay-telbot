@@ -1,6 +1,6 @@
 # rapyd-pay-telbot
 
-![image](alex-kinght.jpg)
+![aleximage](alex.jpg)
 
 
 ### Rapyd Pay Telbot is a telegram frontend checkout experience for users in effort to build galaxy's best checkout experience.
