@@ -16,7 +16,7 @@
 
 **/initstore** - Initialized routine for continuous listening for webapp.
 
-**/initstore** - Alternative to initstore but it saves the data after webapp captures it. And not in realtime.
+**/save** - Alternative to initstore but it saves the data after webapp captures it. And not in realtime.
 
 **/menu** - Sends all available items in the menu with a picture, description and price tag.
 

@@ -11,7 +11,7 @@ func GetAvailableCommands() string {
 
 	str += fmt.Sprintln("<b>/help</b> - <i>Lists all the available commands.</i>\n")
 	str += fmt.Sprintln("<b>/initstore</b> - <i>Initialized routine for continuous listening for webapp.</i>\n")
-	str += fmt.Sprintln("<b>/initstore</b> - <i>Alternative to initstore but it saves the data after webapp captures it. And not in realtime.</i>\n")
+	str += fmt.Sprintln("<b>/save</b> - <i>Alternative to initstore but it saves the data after webapp captures it. And not in realtime.</i>\n")
 	str += fmt.Sprintln("<b>/menu</b> - <i>Sends all available items in the menu with a picture, description and price tag.</i>\n")
 	str += fmt.Sprintln("<b>/summary</b> - <i>Gives a message with all items in your basket, total price and shipping address, phone number and name.</i>\n")
 	str += fmt.Sprintln("<b>/sethouse {housename}</b> - <i>Sets House field of shipping Address to {housename}.</i>\n")
