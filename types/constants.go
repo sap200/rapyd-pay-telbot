@@ -33,6 +33,7 @@ const PAYMENT_DELIMITER = "-"
 const PAYMENT_ACTIVE = "ACT"
 const PAYMENT_CLOSED = "CLO"
 const PAYMENT_ERROR = "ERR"
+const SANDBOX_ERROR = `"status":"ERROR"`
 
 // Payment Types
 const BANK = "Bank"

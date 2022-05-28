@@ -236,6 +236,10 @@ func CreatePaymentRequest(details types.Details) (string, float64, string, error
 			return "", 0.0, "", err
 		}
 
+		if findError(string(d)) {
+			return "", 0.0, "", errors.New(string(d))
+		}
+
 		payId := newData["data"].(map[string]interface{})["id"]
 		amt := newData["data"].(map[string]interface{})["original_amount"]
 		redirectURL := newData["data"].(map[string]interface{})["redirect_url"]
@@ -282,6 +286,10 @@ func CreatePaymentRequest(details types.Details) (string, float64, string, error
 		if err != nil {
 			log.Println(err)
 			return "", 0.0, "", err
+		}
+
+		if findError(string(d)) {
+			return "", 0.0, "", errors.New(string(d))
 		}
 
 		fmt.Println(newData)
@@ -335,6 +343,10 @@ func CreatePaymentRequest(details types.Details) (string, float64, string, error
 		if err != nil {
 			log.Println(err)
 			return "", 0.0, "", err
+		}
+
+		if findError(string(d)) {
+			return "", 0.0, "", errors.New(string(d))
 		}
 
 		payId := newData["data"].(map[string]interface{})["id"]
@@ -396,6 +408,10 @@ func GetPaymentStatus(payID string) string {
 		return err.Error()
 	}
 
+	if findError(string(x)) {
+		return string(x)
+	}
+
 	status := result["data"].(map[string]interface{})["status"]
 
 	return status.(string)
@@ -437,6 +453,14 @@ func CompletePayment(payID string) string {
 		return err.Error()
 	}
 
+	if findError(string(d)) {
+		return string(d)
+	}
+
 	status := newData["data"].(map[string]interface{})["status"]
 	return status.(string)
+}
+
+func findError(x string) bool {
+	return strings.Contains(x, types.SANDBOX_ERROR)
 }
